@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #27c4cc;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.running-text {
+    font-size: 20px;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-square;
+    animation: led-marquee 8s linear infinite;
+    text-shadow: 0 0 10px #27c4cc, 0 0 20px #27c4cc, 0 0 30px #27c4cc, 0 0 40px #43e888, 0 0 70px #43e888, 0 0 80px #43e888, 0 0 100px #43e888, 0 0 150px #43e888;
+}
+
+.led-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    color: #27c4cc;
+    text-shadow: 
+        0 0 5px #000000,
+        0 0 10px #000000,
+        0 0 20px #000000,
+        0 0 30px #27c4cc,
+        0 0 40px #27c4cc,
+        0 0 50px #27c4cc,
+        0 0 60px #27c4cc;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes led-marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #28a745;
+    font-size: 18px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #27c4cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #43e888;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/premium-vector/woman-jogging-overweight-girl-running-sport-activity-training-workout-weight-loss-concept-summer-park-landscape-background-flat-full-length-horizontal_48369-27050.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
